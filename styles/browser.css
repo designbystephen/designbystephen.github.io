@@ -35,34 +35,6 @@ h1{
 	font-size: 16px;
 }
 
-
-/*.link-list{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	height: 31px;
-}
-.link-list a, .link-list a:visited{
-	padding: 4px 8px;
-	display: block;
-	background-color: #eee;
-	color: #333;
-	border-bottom: 1px solid #ccc;
-	text-decoration: none;
-}
-.link-list a:hover{
-	color: #8e44ad;
-	text-decoration: none;
-}
-.link-list span{
-	color: #333;
-	display: inline-block;
-	margin-right: 8px;
-}
-.link-list li:last-child a{
-	border: 0;
-}*/
-
 /**
  * Blurb Component
  */
@@ -132,6 +104,7 @@ h1{
 .chip-list__chip a, .chip-list__chip a:visited{
 	padding: 4px 8px;
 	display: block;
+	width: 100%;
 	background-color: #eee;
 	color: #333;
 	border-bottom: 1px solid #ccc;
