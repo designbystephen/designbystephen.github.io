@@ -35,7 +35,8 @@ h1{
 	font-size: 16px;
 }
 
-.link-list{
+
+/*.link-list{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -60,7 +61,7 @@ h1{
 }
 .link-list li:last-child a{
 	border: 0;
-}
+}*/
 
 /**
  * Blurb Component
@@ -106,6 +107,50 @@ h1{
 }
 
 /**
+ * Chip Component
+ */
+
+.chip-list{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 0px;
+	flex-wrap: wrap;
+}
+
+.chip-list__col{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 0;
+	list-style-type: none;
+	padding: 0 0px;
+	margin: 0;
+	flex-basis: 48%;
+	flex-wrap: wrap;
+}
+
+.chip-list__chip a, .chip-list__chip a:visited{
+	padding: 4px 8px;
+	display: block;
+	background-color: #eee;
+	color: #333;
+	border-bottom: 1px solid #ccc;
+	text-decoration: none;
+}
+.chip-list__chip a:hover{
+	color: #8e44ad;
+	text-decoration: none;
+}
+.chip-list__chip span{
+	color: #333;
+	display: inline-block;
+	margin-right: 8px;
+}
+.chip-list__chip:last-child a{
+	border: 0;
+}
+
+/**
  * Helpers
  */
 
@@ -126,6 +171,16 @@ h1{
 	}
 }
 
+@media (max-width: 768px){
+	/* set basis to fill entire container */
+	.chip-list__col{
+		flex-basis: 100%;
+	}
+	/* keep border for all items */
+	.chip-list__chip:last-child a{
+		border-bottom: 1px solid #ccc;
+	}
+}
 /**
  * Animations
  */
