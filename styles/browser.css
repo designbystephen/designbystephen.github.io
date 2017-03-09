@@ -161,12 +161,12 @@ h1{
 .animated{
 	animation-duration: .55s;
 	animation-timing-function: ease;
-	display: none;
+	/*display: none;*/
 }
 
 .animated--slide{
 	animation-name: slideInDown;
-	display: block;
+	/*display: block;*/
 }
 
 @keyframes slideInDown {
