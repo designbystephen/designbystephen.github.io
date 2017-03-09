@@ -39,6 +39,7 @@ h1{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	height: 31px;
 }
 .link-list a, .link-list a:visited{
 	padding: 4px 8px;
