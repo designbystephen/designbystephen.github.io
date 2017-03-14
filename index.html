@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=device-width">
 
 	<title>Stephen Roth, Front-End Web Developer and iForm Developer</title>
 
@@ -33,7 +33,7 @@
 			<header>
 				<div id="page-header" class="animated">
 					<div id="avatar" class="text-center">
-						<img class="img-circle" src="assets/images/stephen_profile.jpg" alt="Stephen Roth" width="150" />
+						<img class="img-circle" src="assets/images/brushed_avatar-2017-03-13.png" alt="Stephen Roth" width="150" />
 					</div>
 					<div class="text-center">
 						<h1>Stephen Roth</h1>
@@ -115,15 +115,12 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<script type="text/javascript">
 		$(function(){
-			//preload
-			var img = new Image('assets/images/stephen_profile.jpg');
-
 			// defer block
 			setTimeout(function(){
 				$('#page-header').addClass('animated--slide');
 				$('#page-content').addClass('animated--fade');
 				$('#page-footer').addClass('animated--fade');
-			}, 0);
+			}, 250);
 		});
 	</script>
 </body>
