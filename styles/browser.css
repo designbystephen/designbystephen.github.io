@@ -36,6 +36,36 @@ h1{
 }
 
 /**
+ * Avatar
+ */
+#avatar{
+	display: flex;
+	justify-content: center;
+	margin-left: 75px;
+}
+
+#avatar img{
+	display: block;
+	height: 150px;
+	width: 150px;
+}
+
+#avatar img:nth-child(odd){
+	z-index: 1;
+	opacity: .5;
+}
+
+#avatar img:nth-child(2){
+	z-index: 2;
+	height: 200px;
+	width: 200px;
+}
+
+#avatar img:nth-child(n+1){
+	margin-left: -75px;
+}
+
+/**
  * Blurb Component
  */
 
